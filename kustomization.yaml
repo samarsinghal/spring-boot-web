@@ -1,9 +1,5 @@
 commonLabels:
   app.kubernetes.io/name: spring-sample-app
-configMapGenerator:
-  - name: spring-configmap-env  # naming convention for reference
-    envs:
-      - env.properties
 resources:
   - deployment.yaml
   - service.yaml
