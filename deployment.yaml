@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
         - name: app 
-          image: markpollack/spring-sample-app:1.0.0
+          image: samarsinghal/spring-sample-app:1.0.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
