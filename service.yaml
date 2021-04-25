@@ -1,7 +1,3 @@
-actions:
-  to: kubernetes/overlays/base/service.yaml
----
-
 kind: Service
 apiVersion: v1
 metadata:
