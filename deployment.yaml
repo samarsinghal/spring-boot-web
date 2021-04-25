@@ -1,3 +1,7 @@
+actions:
+  to: kubernetes/overlays/base/deployment.yaml
+---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -8,7 +12,7 @@ spec:
     spec:
       containers:
         - name: app 
-          image: samarsinghal/spring-sample-app:1.0.0
+          image: repository-project/application:1.0.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
