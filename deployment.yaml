@@ -9,7 +9,7 @@ spec:
       containers:
         - name: app 
           image: repository-project/application:1.0.0
-          imagePullPolicy: IfNotPresent
+#           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
           # envFrom:
