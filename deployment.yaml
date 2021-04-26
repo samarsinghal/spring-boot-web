@@ -10,7 +10,7 @@ spec:
         - name: my-harbor-creds
       containers:
         - name: app 
-          image: repository-project/application:1.0.0
+          image: harbor.tanzudemo.frankcarta.com/spring-petclinic/spring-petclinic
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
