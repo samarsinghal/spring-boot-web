@@ -6,10 +6,12 @@ spec:
   replicas: 1
   template:
     spec:
+      imagePullSecrets:
+        - name: my-harbor-creds
       containers:
         - name: app 
           image: repository-project/application:1.0.0
-#           imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           # envFrom:
