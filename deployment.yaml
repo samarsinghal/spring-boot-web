@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       imagePullSecrets:
-        - name: my-harbor-creds
+        - name: harbor
       containers:
         - name: app 
           image: harbor.tanzudemo.frankcarta.com/spring-petclinic/spring-petclinic
