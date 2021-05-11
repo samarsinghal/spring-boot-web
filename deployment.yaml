@@ -10,7 +10,7 @@ spec:
         - name: harbor
       containers:
         - name: app 
-          image: harbor.tanzu.frankcarta.com/spring-petclinic/spring-petclinic
+          image: harbor.tanzu.frankcarta.com/apps/spring-petclinic
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
